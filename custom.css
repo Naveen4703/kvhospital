@@ -1,0 +1,51 @@
+.right-image{
+    border-radius: 12px;
+}
+
+.single-pf a{
+    display: none;
+}
+
+.single-pf::before{
+    background-color: #ffffff00 !important;
+}
+
+.choose-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slide-in-anim 1.2s linear forwards;
+}
+
+.space-20{
+    margin: 10px 0px 30px 0px;
+}
+.specialization{
+    font-size: 8px;
+    display: block;
+}
+.portfolio{
+    padding: 100px 0px 50px 0px !important;
+}
+
+@keyframes slide-in-anim {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(-75%);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateX(-50%);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateX(-25%);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
