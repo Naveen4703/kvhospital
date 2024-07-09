@@ -21,9 +21,9 @@ body{
       height: 250px;
       width: 350px;
       transform: scale(1.0);
-      transition: transform 0.4s ease;
       border-radius: 12px;
       border: 0.1px dotted #001a37;
+      transition: transform 0.3s linear;
     }
     
     .img-box {

@@ -43,10 +43,51 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="custom.css">
 		<style>
-			.news-head img{
-				min-width: 200px;
-				max-height: 180px;
-			}
+			
+		.img-fixed {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+        .profile-card {
+            margin-top: 15px;
+        }
+        .profile-body {
+            padding: 15px;
+            flex: 1 1 auto; /* Allow the body to grow to fill the space */
+        }
+        .profile-content {
+            text-align: center;
+        }
+		.profile-content .date{
+			display: inline-block;
+			font-size: 14px;
+			margin-bottom: 5px;
+			background: #1A76D1;
+			color: #fff;
+			padding: 4px 15px;
+			border-radius: 3px;
+			font-size: 14px;
+			margin-bottom: 10px;
+			width: 100%; /* Make it full width */
+			max-width: 180px; /* Same as the profile image width */
+			text-align: center; 
+		}
+        .section-title img {
+            max-width: 100px;
+        }
+        .row.equal-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-lg-3, .col-md-6, .col-12 {
+            display: flex;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
 		</style>
     </head>
     <body>
@@ -66,6 +107,31 @@
             </div>
         </div>
         <!-- End Preloader -->
+
+		<!-- 24 / 7 Button -->
+		<ul class="pro-features">
+			
+			<a class="get-pro"><img src="./img/local/l.png"></a>
+			<li class="big-title">All Emergency cases are taken 24 / 7</li>
+			
+			<div class="button" hidden>
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul>
+		<!--End 24 / 7 button-->
+		<!--Whatsapp sticky button-->
+		<ul class="whatsapp-sticky">
+			
+			<a class="whatsapp-icon" href="https://wa.me/918019592018?text=Hi"><img src="./img/local/whatsapp-png-removebg-preview.png"></a>
+			<li class="big-title">All Emergency cases are taken 24 / 7</li>
+			
+			<div class="button" hidden>
+				<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879" target="_blank" class="btn">Pro Version Demo</a>
+				<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank" class="btn">Buy Pro Version</a>
+			</div>
+		</ul>
+		<!--End whatsapp sticky-->
 		
 		<!-- Header Area -->
 		<header class="header" >
@@ -171,8 +237,8 @@
 			<div class="container">
 				<div class="bread-inner">
 					<div class="row">
-						<div class="col-12">
-							<h2>Hospital Lab</h2>
+						<div class="col-12" style="display: block;">
+							<h2>Doctors</h2>
 							<ul class="bread-list">
 								<li><a href="index.html">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
@@ -186,126 +252,125 @@
 		<!-- End Breadcrumbs -->
 
 		 <!-- Start Blog Area -->
-		<section class="blog section" id="blog"  style="padding-top: 50px !important;">
+		 <section class="blog section" id="blog" style="padding-top: 50px !important;">
 			<div class="container">
-				<div class="row">
+				<div class="row equal-height">
 					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Super specialty doctors  [REGULAR]</h2>
+						<div class="section-title text-center">
+							<h2>Super Specialty Doctors [REGULAR]</h2>
 							<img src="img/section-img.png" alt="#">
 							<p></p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-12 space-20">
-						<!-- Single Blog -->
-						<div class="single-news">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
+						<!-- Single Profile -->
+						<div class="card">
 							<a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-							<div class="news-head">
-								<img src="img/doctors/trivikram-rao.jpeg" alt="#">
+								<div class="card-img-top">
+									<img class="img-fluid img-fixed" src="img/doctors/trivikram-rao.jpeg" alt="#">
+								</div>
+								<div class="card-body profile-body">
+									<div class="profile-content">
+										<div class="date">Dr. Trivikram Recharla <span class="specialization">[ MBBS.,D.CH,DNB,.]</span></div>
+										<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatrics and Neonatology</a></h5>
+										<p class="text">
+											<br>OP: Every day morning.<br>
+											MORNING - <b>9:00 AM TO 2:00 PM</b><br>
+											EVENING - <b>5:00 PM TO 8:00 PM</b>
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- End Single Profile -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
+						<!-- Single Profile -->
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/dr.keerti nara.jpeg" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">Dr.Trivikram Recharla 
-										 <span class="specialization">[ MBBS.,D.CH,DNB,.]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatrics and Neonatology</a></h2>
+							<div class="card-body profile-body">
+								<div class="profile-content">
+									<div class="date">Dr. Keerthi Nara <span class="specialization"> [MBBS., DGO., DNB,.]</span></div>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Experienced Obstetrics and Gynecology</a></h5>
 									<p class="text">
-										<br>OP: Every day morning . <br>
+										<br>OP: Every day<br>
 										MORNING - <b>9:00 AM TO 2:00 PM</b><br>
-										EVENING - <b> 5:00 PM TO 8:00 </b>
-									</p>
-								</div>
-							</div>
-						</a>
-						</div>
-						<!-- End Single Blog -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12" style="margin-top: 15px;">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/doctors/dr.keerti nara.jpeg" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">Dr.Keerthi Nara <span class="specialization"> [MBBS., DGO., DNB,.]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Experienced Obstetrics and gynaecology</a></h2>
-									<p class="text">
-										<br>OP: Every day <br>
-										MORNING - <b>9:00 AM TO 2:00</b><br>
-										EVENING - <b>5:00 PM TO 9:00PM</b>
+										EVENING - <b>5:00 PM TO 9:00 PM</b>
 									</p>
 								</div>
 							</div>
 						</div>
-						<!-- End Single Blog -->
+						<!-- End Single Profile -->
 					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/doctors/14.jpg" alt="#">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
+						<!-- Single Profile -->
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/14.jpg" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">Dr. Lakshmi Narayana Udduru<span class="specialization">[MBBS.,MD]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">GENERAL MEDICINE </a></h2>
+							<div class="card-body profile-body">
+								<div class="profile-content">
+									<div class="date">Dr. Lakshmi Narayana Udduru <span class="specialization">[MBBS., MD]</span></div>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">General Medicine</a></h5>
 									<p class="text">
-										<br>OP: Every day <br>
+										<br>OP: Every day<br>
 										MORNING - <b>8:00 AM TO 9:00 AM</b><br>
 										EVENING - <b>5:00 PM TO 9:00 PM</b>
 									</p>
 								</div>
 							</div>
 						</div>
-						<!-- End Single Blog -->
+						<!-- End Single Profile -->
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- End Blog Area -->
+
 		 <!-- Start Blog Area -->
-		<section class="blog section" id="blog"  style="padding-top: 50px !important;">
+		 <section class="blog section" id="blog" style="padding-top: 50px !important;">
 			<div class="container">
-				<div class="row">
+				<div class="row equal-height">
 					<div class="col-lg-12">
-						<div class="section-title">
+						<div class="section-title text-center">
 							<h2>Child Super specialty doctors [visiting consultancy] </h2>
 							<img src="img/section-img.png" alt="#">
 							<p></p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-12 space-20">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
 						<!-- Single Blog -->
-						<div class="single-news">
-							<a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-							<div class="news-head">
-								<img src="img/doctors/blank-profil.webp" alt="#">
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/blank-profil.webp" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
+							<div class="card-body profile-body">
+								<div class="profile-content">
 									<div class="date">Dr. Sowmya Kasthuri  
-										 <span class="specialization">[MBBS,.MD.,DM.,]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatric Cardiology</a></h2>
+										 <span class="specialization">[MBBS,.MD.,DM.,]</span>
+									</div>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatric Cardiology</a></h5>
 									<p class="text">
 										<br>OP: Every month first Sunday . <br>
 										MORNING - <b>9:00 AM TO 2:00 PM</b><br>
 									</p>
 								</div>
 							</div>
-						</a>
 						</div>
 						<!-- End Single Blog -->
 					</div>
-					<div class="col-lg-3 col-md-6 col-12" style="margin-top: 18px;">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card" style="margin-top: 18px;">
 						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/doctors/pavan_rs.jpeg" alt="#">
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/pavan_rs.jpeg" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
+							<div class="card-body profile-body">
+								<div class="profile-content">
 									<div class="date">Dr. Pavan RS <span class="specialization"> [MBBS.,MD(PAED).,FACI.,FIPN]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatric Neurologist</a></h2>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatric Neurologist</a></h5>
 									<p class="text">
 										<br>OP: Every Tuesday   <br>
 										EVENING - <b>5:00 PM TO 8:00 PM</b><br>
@@ -315,17 +380,17 @@
 						</div>
 						<!-- End Single Blog -->
 					</div>
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
 						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/doctors/Dr. rohith sajja.jpeg" alt="#">
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/Dr. rohith sajja.jpeg" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">Dr. Rohith Sajja <span class="specialization">[MBBS.,MS.,(GEN.SURGEON).,MCH.,FIAGES,.]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"></a></h2>
-									<p class="text">Pediatric Surgeon
+							<div class="card-body profile-body">
+								<div class="profile-content">
+									<div class="date">Dr. Rohith Sajja <span class="specialization">[MBBS.,MS.,MCH.,FIAGES,.]</span></div>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Pediatric Surgeon</a></h5>
+									<p class="text">
 										<br>OP:  Every month Second Monday <br>
 										MORNING - <b>10:00 AM TO 5:00 PM</b><br>
 									</p>
@@ -339,37 +404,27 @@
 		</section>
 		<!-- End Blog Area -->
 		 	<!-- Start Blog Area -->
-		<section class="blog section" id="blog" style="padding: 50px !important;">
+		<section class="blog section" id="blog" style="padding-top: 50px !important;">
 			<div class="container">
-				<div class="row" hidden>
+				<div class="row equal-height">
 					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Our Specialized Doctors Team.</h2>
-							<img src="img/section-img.png" alt="#">
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
+						<div class="section-title text-center">
 							<h2>Adult Super specialty doctors [visiting consultancy]</h2>
 							<img src="img/section-img.png" alt="#">
 							<p></p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-6 col-12 space-20">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
 						<!-- Single Blog -->
-						<div class="single-news">
-							<a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-							<div class="news-head">
-								<img src="img/news/news_1.png" alt="#">
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/news/news_1.png" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
+							<div class="card-body profile-body">
+								<div class="profile-content">
 									<div class="date">Dr. Haritha Kumari<span class="specialization">MD, DM., (Neurology), Brain, Spine and Nerve Specialist</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Enel Hospitals - Department of Neurology.</a></h2>
-									<p class="text">Experienced Brain, Spine and Neurologists from Enel Hospital Nellore coming to our Gudur town.
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Enel Hospitals - Department of Neurology.</a></h5>
+									<p class="text">Experienced Brain, Spine and Neurologists.
 										<br>Visit: Every month first Wednesday. <br>
 										MORNING - <b>10:00AM</b> TO<br>
 										AFTERNOON - <b>2:00PM</b>
@@ -380,16 +435,16 @@
 						</div>
 						<!-- End Single Blog -->
 					</div>
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 space-20 profile-card">
 						<!-- Single Blog -->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/doctors/Dr.dwarakanadh reddy.jpeg" alt="#">
+						<div class="card">
+							<div class="card-img-top">
+								<img class="img-fluid img-fixed" src="img/doctors/Dr.dwarakanadh reddy.jpeg" alt="#">
 							</div>
-							<div class="news-body">
-								<div class="news-content">
+							<div class="card-body profile-body">
+								<div class="profile-content">
 									<div class="date">Dr. Dwarakanadh Reddy <span class="specialization">[MBBS.,(GEN.SURGEON).,DRNB,.]</span></div>
-									<h2><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Experienced Surgical Gastroenterologist</a></h2>
+									<h5><a href="https://www.instagram.com/p/C8uff0CPvMP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Experienced Surgical Gastroenterologist</a></h5>
 									<p class="text">
 										<br>Visit: Every Month Second Sunday. <br>
 										MORNING - <b>10:00AM</b> TO<br>
