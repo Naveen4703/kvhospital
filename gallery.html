@@ -141,17 +141,12 @@
 												</ul>
 											</li>
 											<li><a href="doctors.html">Doctors </a></li>
-											<li><a href="#">Lab <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="special-labs.html">Labs</a></li>
-													
-													<li><a href="xray-lab.html">X-Ray</a></li>
-													<li><a href="ultra-sound.html">Ultra sound</a></li>
-													
-												</ul></li>
+											<li><a href="operation-theatre.html">Operation Theatre</a></li>
 											<li><a href="#">Hospital Facilities <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="operation-theatre.html">Operation Theatre</a></li>
+													<li><a href="special-labs.html">Lab</a></li>
+													<li><a href="xray-lab.html">X-Ray</a></li>
+													<li><a href="ultra-sound.html">Ultra sound</a></li>
 													<li><a href="micu.html">MICU</a></li>
 													<li><a href="nicu.html">NICU</a></li>
 													<li><a href="labour-room.html">Labour Room</a></li>
@@ -162,11 +157,7 @@
 													<li><a href="casuality.html">Casuality</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="#">Blog Details</a></li>
-												</ul>
-											</li>
+											
 											<li class="active"><a href="gallery.html">Gallery</a></li>
 											<li><a href="contact.html">Contact Us</a></li>
 										</ul>
@@ -216,49 +207,48 @@
                 var imgs = "", images = document.getElementById('gallery');
                 images.innerHTML = "";
     
-                var files = [
+				var fil = {
+							"Private Rooms"	:'photo_2.JPG',
+							"Operation Theatre"	: 'photo_3.JPG',
+							"Neonatal Intensive Care"	: 'photo_4.JPG',
+							"Labour Room"	: 'photo_5.JPG',
+							"Casuality"		:	'casuality.JPG',
+							" Lab "		:	'DSC00872.JPG',
+							"  Lab"			:	'DSC00879.JPG',
+							" Lab  "			:	'DSC00880.JPG',
+							"  Lab  "			:	'DSC00957.JPG',
+							"KV Hospitals "			:	'DSC01050.JPG',
+							"General Ward"			:	'general ward.JPG',
+							"Lab"			:	'lab-12.JPG',
+							"Laminar Flow Operation Theatre "			:	'op2.JPG',
+							"Pharmacy"			:	'pharmacy.JPG',
+							"Share Ward"			:	'share-ward.JPG',
+							"Ultra Sound Unit"			:	'ultra-sound.JPG',
+							"Warmer"			:	'warmer.JPG',
+							"DR X-Ray "			:	'x ray.JPG',
+							"DR X-Ray"			:	'x-ray-2.JPG'
+				}
+					
+					Object.entries(fil).forEach(([key, val]) => {
+						imgs += text(key, val);
+					});
 
-				'photo_2.JPG',
-				'photo_3.JPG',
-				'photo_4.JPG',
-				'photo_5.JPG',
-				'casuality.JPG',
-				'DSC00872.JPG',
-				'DSC00879.JPG',
-				'DSC00880.JPG',
-				'DSC00957.JPG',
-				'DSC01050.JPG',
-				'general ward.JPG',
-				'lab-12.JPG',
-				'op2.JPG',
-				'pharmacy.JPG',
-				'semi p r.JPG',
-				'ultra-sound.JPG',
-				'warmer.JPG',
-				'x ray.JPG',
-				'x-ray-2.JPG'
-];
-    
-                files.forEach(file => {
-                    imgs += text(file);
-                });
-    
-                images.innerHTML = imgs;
-            });
-    
-            function text(link) {
-                return  `
-                            <div class="img-box">
-                                <img src="./img/local/${link}" alt="" />
-                                <div class="transparent-box">
-                                    <div class="caption">
-                                        <p></p>
-                                        <p class="opacity-low">KV Hospitals</p>
-                                    </div>
-                                </div> 
-                            </div>
-                        `;
-            }
+					images.innerHTML = imgs;
+				});
+
+				function text(txt, link) {
+					return `
+						<div class="img-box">
+							<img src="./img/local/${link}" alt="" />
+							<div class="transparent-box">
+								<div class="caption">
+									<p></p>
+									<p class="opacity-low">${txt}</p>
+								</div>
+							</div>
+						</div>
+					`;
+				}
         </script>
 		
 		
