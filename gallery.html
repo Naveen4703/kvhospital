@@ -208,29 +208,38 @@
                 images.innerHTML = "";
     
 				var fil = {
-							"Private Rooms"	:'photo_2.JPG',
-							"Operation Theatre"	: 'photo_3.JPG',
-							"Neonatal Intensive Care"	: 'photo_4.JPG',
-							"Labour Room"	: 'photo_5.JPG',
-							"Casuality"		:	'casuality.JPG',
-							" Lab "		:	'DSC00872.JPG',
-							"  Lab"			:	'DSC00879.JPG',
-							" Lab  "			:	'DSC00880.JPG',
-							"  Lab  "			:	'DSC00957.JPG',
-							"KV Hospitals "			:	'DSC01050.JPG',
-							"General Ward"			:	'general ward.JPG',
-							"Lab"			:	'lab-12.JPG',
-							"Laminar Flow Operation Theatre "			:	'op2.JPG',
-							"Pharmacy"			:	'pharmacy.JPG',
-							"Share Ward"			:	'share-ward.JPG',
-							"Ultra Sound Unit"			:	'ultra-sound.JPG',
-							"Warmer"			:	'warmer.JPG',
-							"DR X-Ray "			:	'x ray.JPG',
-							"DR X-Ray"			:	'x-ray-2.JPG'
-				}
+					'photo_2.JPG': 'Private Rooms',
+					'photo_3.JPG': 'Operation Theatre',
+					'photo_4.JPG': 'Neonatal Intensive Care',
+					'photo_5.JPG': 'Labour Room',
+					'casuality.JPG': 'Casuality',
+					'DSC00872.JPG': 'Lab',
+					'DSC00879.JPG': 'Lab',
+					'DSC00880.JPG': 'Lab',
+					'DSC00957.JPG': 'Lab',
+					'DSC01050.JPG': 'KV Hospitals',
+					'general ward.JPG': 'General Ward',
+					'lab-12.JPG': 'Lab',
+					'op2.JPG': 'Modular Operation Theatre',
+					'pharmacy.JPG': 'Pharmacy',
+					'share-ward.JPG': 'Share Ward',
+					'ultra-sound.JPG': 'Ultra Sound Unit',
+					'warmer.JPG': 'Warmer',
+					'x ray.JPG': 'DR X-Ray',
+					'x-ray-2.JPG': 'DR X-Ray',
+					'waiting-hall.JPG': 'Waiting-Hall',
+					'opening-1.JPG': 'Inauguration',
+					'opening-2.JPG': 'Inauguration',
+					'opening-3.JPG': 'Inauguration ',
+					'opening-4.jpeg': 'Inauguration',
+					'opening-5.jpeg': 'Inauguration',
+					'opening-6.jpeg': 'Inauguration',
+					'opening-7.jpeg': 'Inauguration'
+				};
+
 					
 					Object.entries(fil).forEach(([key, val]) => {
-						imgs += text(key, val);
+						imgs += text(val.trim(),key);
 					});
 
 					images.innerHTML = imgs;
